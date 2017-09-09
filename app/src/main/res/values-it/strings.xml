@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Umberto I NursingApp</string>
+    <string name="remember">Ricorda al prossimo accesso</string>
+    <string name="action_sign_in_short">Accedi</string>
+    <string name="action_sign_in">Accedi o Registrati</string>
+</resources>
