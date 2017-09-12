@@ -4,4 +4,6 @@
     <string name="remember">Ricorda al prossimo accesso</string>
     <string name="action_sign_in_short">Accedi</string>
     <string name="action_sign_in">Accedi o Registrati</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="myapp">myapp</string>
 </resources>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">nurseApp</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="myapp">myapp</string>
 </resources>

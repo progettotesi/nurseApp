@@ -1,7 +1,3 @@
-
-
-
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -13,48 +9,10 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="russodiego.nursingapp.LoginActivity"
+    tools:context="russodiego.nurseapp.LoginActivity"
     android:weightSum="1"
     android:orientation="vertical">
 
-    <!-- Logo Sapienza -->
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:adjustViewBounds="false"
-        android:background="@color/windowsBackground"
-        android:contentDescription="logo_sapienza"
-        android:scaleType="centerInside"
-        android:src="@drawable/logo_sapienza"
-        android:layout_gravity="left"/>
-
-    <!-- Titolo App -->
-
-    <!-- Logo Umberto I -->
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="353dp"
-        android:layout_height="20dp"
-        android:layout_gravity="center"
-        android:layout_weight="0.05"
-        android:clickable="false"
-        android:fontFamily="sans-serif"
-        android:text="@string/app_name"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="24sp" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_gravity="right"
-        android:adjustViewBounds="true"
-        android:background="@color/windowsBackground"
-        android:contentDescription="myapp"
-        android:scaleType="centerInside"
-        android:src="@drawable/logo_umberto" />
 
     <!-- Login progress -->
 
@@ -66,6 +24,55 @@
         android:layout_marginBottom="8dp"
         android:visibility="gone" />
 
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:fitsSystemWindows="false">
+
+
+        <!-- Logo Sapienza -->
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:adjustViewBounds="true"
+            android:background="@android:color/background_light"
+            android:contentDescription="logo_sapienza"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo_sapienza"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <!-- Titolo App -->
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/background_light"
+            android:clickable="false"
+            android:elevation="6dp"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Logo Umberto I -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="51dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:adjustViewBounds="true"
+            android:background="@android:color/background_light"
+            android:contentDescription="@string/myapp"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo_umberto"
+            tools:ignore="RtlHardcoded" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
@@ -76,8 +83,8 @@
         <android.support.constraint.ConstraintLayout
             android:id="@+id/email_login_form"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/windowsBackground"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light"
             android:orientation="vertical"
             android:visibility="visible"
             android:weightSum="1"
@@ -87,19 +94,19 @@
 
             <AutoCompleteTextView
                 android:id="@+id/email"
-                android:layout_width="552dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/prompt_email"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
                 tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="92dp"
-                tools:layout_editor_absoluteY="26dp" />
+                tools:layout_editor_absoluteX="67dp"
+                tools:layout_editor_absoluteY="204dp" />
 
 
             <EditText
                 android:id="@+id/password"
-                android:layout_width="552dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/prompt_password"
                 android:imeActionId="@+id/login"
@@ -108,20 +115,39 @@
                 android:inputType="textPassword"
                 android:maxLines="1"
                 tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="92dp"
-                tools:layout_editor_absoluteY="96dp" />
+                tools:layout_editor_absoluteX="67dp"
+                tools:layout_editor_absoluteY="258dp" />
 
 
             <Button
                 android:id="@+id/email_sign_in_button"
                 style="?android:textAppearanceSmall"
-                android:layout_width="552dp"
+                android:layout_width="348dp"
                 android:layout_height="wrap_content"
                 android:text="@string/action_sign_in"
                 android:textStyle="bold"
                 tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="92dp"
-                tools:layout_editor_absoluteY="164dp" />
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="460dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox"
+                android:visibility="visible"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="674dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CheckBox"
+                tools:ignore="HardcodedText,MissingConstraints"
+                tools:layout_editor_absoluteX="107dp"
+                tools:layout_editor_absoluteY="670dp" />
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>

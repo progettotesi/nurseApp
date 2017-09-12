@@ -1,4 +1,4 @@
-package russodiego.nursingapp;
+package russodiego.nurseapp;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
