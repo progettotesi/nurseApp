@@ -1,5 +1,21 @@
 <resources>
-    <string name="app_name">nurseApp</string>
+    <string name="app_name" translatable="false">nurseApp</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email" translatable="true">Email</string>
+    <string name="prompt_password" translatable="true">Password</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email" translatable="true">This email address is invalid</string>
+    <string name="error_invalid_password" translatable="true">This password is too short</string>
+    <string name="error_incorrect_password" translatable="true">This password is incorrect</string>
+    <string name="error_field_required" translatable="true">This field is required</string>
+    <string name="permission_rationale" translatable="true">"Contacts permissions are needed for providing email
+        completions."
+    </string>
     <string name="checkbox">CheckBox</string>
+    <string name="remember">Remember Me</string>
+    <string name="action_sign_in">Sign in or Register</string>
+    <string name="logo_sapienza" translatable="false">logo_sapienza</string>
     <string name="myapp">myapp</string>
+    <string name="txt_nurse_title">Nurse profile</string>
 </resources>

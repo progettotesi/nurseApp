@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context="russodiego.nurseapp.NurseActivity">
+    tools:context="russodiego.nurseapp.PatientActivity">
 
     <android.support.design.widget.CoordinatorLayout
         android:id="@+id/header"
@@ -62,11 +62,11 @@
 
 
     <TextView
-        android:id="@+id/txt_nurse_title"
+        android:id="@+id/txt_patient_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/background_light"
-        android:text="Nurse Profile"
+        android:text="Patient Profile"
         android:textAllCaps="true"
         android:textColor="000"
         android:textSize="30sp"

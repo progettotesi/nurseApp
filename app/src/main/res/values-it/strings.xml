@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Umberto I NursingApp</string>
-    <string name="remember">Ricorda al prossimo accesso</string>
+    <!-- Stringhe relative al login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
     <string name="action_sign_in_short">Accedi</string>
     <string name="action_sign_in">Accedi o Registrati</string>
+    <string name="remember">Ricorda al prossimo accesso</string>
     <string name="checkbox">CheckBox</string>
     <string name="myapp">myapp</string>
+<string name="error_invalid_email">Questo indirizzo email non è valido</string>
+<string name="error_invalid_password">La password è troppo corta</string>
+<string name="error_incorrect_password">La password non è corretta</string>
+<string name="error_field_required">Questo campo è richiesto</string>
+<string name="permission_rationale">"Le autorizzazioni sono necessarie."</string>
+    <string name="txt_nurse_title">Profilo Infermiere</string>
 </resources>
