@@ -7,15 +7,16 @@
     android:background="@color/colorPrimary"
     tools:context="russodiego.nurseapp.NurseActivity">
 
-    <android.support.design.widget.CoordinatorLayout
+    <android.support.constraint.ConstraintLayout
         android:id="@+id/header"
-        android:layout_width="500dp"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:background="@android:color/background_light"
         android:visibility="visible"
-        tools:layout_editor_absoluteY="4dp"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="2dp">
 
 
         <ImageView
@@ -29,19 +30,9 @@
             android:scaleType="centerInside"
             android:src="@drawable/logo_umberto"
             tools:ignore="RtlHardcoded"
+            tools:layout_editor_absoluteX="348dp"
+            tools:layout_editor_absoluteY="0dp"
             tools:layout_gravity="right" />
-
-        <ImageView
-            android:id="@+id/img_logo_sapienza"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="left"
-            android:adjustViewBounds="true"
-            android:background="@android:color/background_light"
-            android:contentDescription="logo_sapienza"
-            android:scaleType="centerInside"
-            android:src="@drawable/logo_sapienza"
-            tools:ignore="HardcodedText,RtlHardcoded" />
 
         <TextView
             android:id="@+id/txt_title"
@@ -56,9 +47,25 @@
             android:textAllCaps="true"
             android:textSize="30sp"
             android:textStyle="bold"
+            tools:layout_editor_absoluteX="123dp"
+            tools:layout_editor_absoluteY="7dp"
             tools:layout_gravity="center_horizontal" />
 
-    </android.support.design.widget.CoordinatorLayout>
+        <ImageView
+            android:id="@+id/img_logo_sapienza"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:adjustViewBounds="true"
+            android:background="@android:color/background_light"
+            android:contentDescription="logo_sapienza"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo_sapienza"
+            tools:ignore="HardcodedText,RtlHardcoded"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </android.support.constraint.ConstraintLayout>
 
 
     <TextView
@@ -77,7 +84,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.185"
+        app:layout_constraintVertical_bias="0.172"
         tools:ignore="HardcodedText" />
 
     <ImageButton
@@ -90,8 +97,9 @@
         android:src="@drawable/profile"
         app:srcCompat="@drawable/profile"
         tools:clickable="?android:attr/windowOverscan"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="277dp" />
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="277dp"
+        tools:ignore="ContentDescription,MissingConstraints" />
 
     <ImageButton
         android:id="@+id/img_samples"
@@ -101,8 +109,10 @@
         android:elevation="2dp"
         app:srcCompat="@drawable/samples"
         tools:clickable="?android:attr/windowOverscan"
-        tools:layout_editor_absoluteX="354dp"
-        tools:layout_editor_absoluteY="277dp" />
+        tools:layout_editor_absoluteX="365dp"
+        tools:layout_editor_absoluteY="277dp"
+        tools:ignore="ContentDescription,MissingConstraints"
+        android:contentDescription="" />
 
     <ImageButton
         android:id="@+id/img_folders"
@@ -112,8 +122,9 @@
         android:elevation="2dp"
         app:srcCompat="@drawable/folders"
         tools:clickable="?android:attr/windowOverscan"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="512dp" />
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="527dp"
+        tools:ignore="ContentDescription,MissingConstraints" />
 
     <ImageButton
         android:id="@+id/img_drugs"
@@ -124,5 +135,6 @@
         android:elevation="2dp"
         app:srcCompat="@drawable/drugs"
         tools:clickable="?android:attr/windowOverscan"
-        tools:layout_editor_absoluteX="354dp"
-        tools:layout_editor_absoluteY="512dp" />
+        tools:layout_editor_absoluteX="365dp"
+        tools:layout_editor_absoluteY="527dp"
+        tools:ignore="ContentDescription,MissingConstraints" />
